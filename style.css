@@ -340,15 +340,15 @@ input[type='reset'] {
 
 @font-face {
   font-family: 'TT-Lakes-Regular';
-  src: url(/fonts/TTLakes-Regular.woff); }
+  src: url(./fonts/TTLakes-Regular.woff); }
 
 @font-face {
   font-family: 'TT-Lakes-Medium';
-  src: url(/fonts/TTLakes-Medium.woff); }
+  src: url(./fonts/TTLakes-Medium.woff); }
 
 @font-face {
   font-family: 'TT-Lakes-Bold';
-  src: url(/src/fonts/TTLakes-Bold.woff); }
+  src: url(./fonts/TTLakes-Bold.woff); }
 
 body {
   background: #f8f8f8;
@@ -423,7 +423,7 @@ hr {
       .heading-text-container h1 {
         padding-right: 120px; } }
   .heading-text-container::before {
-    content: url(/src/img/highlight.svg);
+    content: url(./static/highlight.svg);
     width: 4px;
     height: 40px;
     position: relative;
@@ -942,7 +942,7 @@ hr {
       .menu-links__link a:hover:focus {
         color: #7e7e82; }
       .menu-links__link a:hover:before {
-        content: url(/src/img/highlight.svg);
+        content: url(./static/highlight.svg);
         width: 3.833px;
         height: 28.308px;
         border: none;
@@ -1081,7 +1081,7 @@ hr {
     position: relative;
     margin: 0; }
     .modal-nav h2::before {
-      content: url(/src/img/highlight.svg);
+      content: url(./static/highlight.svg);
       width: 3px;
       height: 40px;
       flex-shrink: 0;
@@ -1207,7 +1207,7 @@ hr {
     margin: 0;
     padding-bottom: 24px; }
     .nav-wrapper h2::before {
-      content: url(/src/img/highlight.svg);
+      content: url(./static/highlight.svg);
       width: 3px;
       height: 40px;
       flex-shrink: 0;
