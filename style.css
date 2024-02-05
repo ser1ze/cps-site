@@ -340,11 +340,11 @@ input[type='reset'] {
 
 @font-face {
   font-family: 'TT-Lakes-Regular';
-  src: url(/src/fonts/TTLakes-Regular.woff); }
+  src: url(/fonts/TTLakes-Regular.woff); }
 
 @font-face {
   font-family: 'TT-Lakes-Medium';
-  src: url(/src/fonts/TTLakes-Medium.woff); }
+  src: url(/fonts/TTLakes-Medium.woff); }
 
 @font-face {
   font-family: 'TT-Lakes-Bold';
