@@ -742,7 +742,7 @@ hr {
       padding-bottom: 50px;
       padding: 0 24px 0 24px; } }
   .price-offer__btn::after {
-    content: url(/src/img/more.svg);
+    content: url(./static/more.svg);
     width: 24px;
     height: 24px;
     position: absolute;
@@ -1043,6 +1043,9 @@ hr {
   transition: all 0.3s ease-in-out;
   z-index: 100;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02); }
+  @media (min-width: 768px) {
+    .modal-feedback {
+      height: 100vh; } }
   @media (min-width: 1120px) {
     .modal-feedback {
       width: 440px; } }
