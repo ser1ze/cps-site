@@ -524,7 +524,11 @@ hr {
     width: 320px;
     height: 230.805px;
     padding-bottom: 10px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    align-items: center; }
+    @media (min-width: 360px) {
+      .content-wrapper__img {
+        width: 375px; } }
     @media (min-width: 1120px) {
       .content-wrapper__img {
         width: 531.346px !important;
@@ -534,7 +538,7 @@ hr {
     align-self: flex-start;
     padding: 8px;
     font-family: "TT-Lakes-Medium"; }
-  .content-wrapper img {
+  .content-wrapper .btn__img {
     position: relative;
     top: 6px;
     right: 6px; }
@@ -723,6 +727,18 @@ hr {
       width: 421px;
       padding: 24px; } }
 
+@media (max-width: 767px) {
+  .price-offer__flex {
+    display: flex;
+    align-items: center;
+    flex-basis: 290px; } }
+
+@media (max-width: 767px) {
+  .price-offer__flex::after {
+    content: url(./static/more.svg);
+    width: 24px;
+    height: 24px; } }
+
 .price-offer__btn {
   padding-left: 16px;
   padding-right: 16px;
@@ -736,20 +752,18 @@ hr {
   /* 150% */
   letter-spacing: -0.2px;
   font-family: "TT-Lakes-Medium";
-  position: relative; }
+  position: relative;
+  display: flex; }
+  @media (min-width: 768px) {
+    .price-offer__btn::after {
+      content: url(./static/more.svg);
+      width: 24px;
+      height: 24px; } }
   @media (min-width: 768px) {
     .price-offer__btn {
       padding-bottom: 50px;
-      padding: 0 24px 0 24px; } }
-  .price-offer__btn::after {
-    content: url(./static/more.svg);
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 22.5px; }
-    @media (min-width: 768px) {
-      .price-offer__btn::after {
-        position: static; } }
+      padding: 0 24px 0 24px;
+      align-items: center; } }
   @media (min-width: 768px) {
     .price-offer__btn {
       display: flex;
@@ -1218,14 +1232,17 @@ hr {
       left: -16px; }
 
 .grid-price-header {
-  text-wrap: nowrap;
-  display: grid;
-  grid-template-columns: 54% 13% 14% 20%;
-  align-items: center;
-  padding: 16px 48px;
-  background: none; }
-  .grid-price-header p {
-    color: #7e7e82; }
+  display: none; }
+  @media (min-width: 768px) {
+    .grid-price-header {
+      text-wrap: nowrap;
+      display: grid;
+      grid-template-columns: 54% 13% 14% 20% !important;
+      align-items: center;
+      padding: 16px 48px;
+      background: none; }
+      .grid-price-header p {
+        color: #7e7e82; } }
 
 
 /*# sourceMappingURL=style.css.map*/
