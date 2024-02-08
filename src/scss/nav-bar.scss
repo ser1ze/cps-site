@@ -1,0 +1,32 @@
+.nav-bar {
+  border-bottom: 1px solid #d9fff5;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  background: $nav-color;
+  padding: 0 16px;
+  align-items: center;
+  height: 88px;
+  flex-shrink: 0;
+
+  @media (min-width: $screen-md) {
+    justify-content: flex-start;
+    padding: 0 24px;
+
+    :nth-child(3) {
+      padding-right: 250px;
+    }
+
+    .hidden-mobile {
+      display: block;
+    }
+
+    .hidden-tablet {
+      display: none;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}

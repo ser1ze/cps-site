@@ -1,0 +1,42 @@
+.menu-links {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+
+  @media (min-width: $screen-md) {
+    padding-bottom: 268px;
+  }
+
+  &__link {
+    transition: fill 1s ease-in-out;
+    position: relative;
+    left: 16px;
+
+    a {
+      text-decoration: none;
+      color: rgb(27, 28, 33);
+
+      &:hover:focus {
+        color: #7e7e82;
+      }
+      &:hover:before {
+        content: url(../img/highlight.svg);
+        width: 3.833px;
+        height: 28.308px;
+        border: none;
+        align-items: center;
+        position: absolute;
+        text-decoration: none;
+        bottom: 4px;
+        left: -16px;
+      }
+    }
+  }
+}

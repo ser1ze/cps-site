@@ -1,0 +1,11 @@
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @media (min-width: $screen-md) {
+    .btn {
+      padding-left: 24px;
+    }
+  }
+}

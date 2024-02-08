@@ -1,0 +1,23 @@
+.swiper-wrapper {
+  padding: 0 16px 0 16px;
+  width: 100% !important;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $screen-md) {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    margin: 0 auto;
+    gap: 24px !important;
+    padding: 0 24px 0 24px 0 !important;
+    width: fit-content !important;
+  }
+  @media (min-width: $screen-lg) {
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+.swiper-wrapper--price {
+  padding: 0 8px 0 8px !important;
+  display: grid;
+}

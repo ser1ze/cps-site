@@ -1,0 +1,48 @@
+.heading-text-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px 0;
+  text-wrap: wrap;
+  max-width: $screen-lg;
+
+  @media (min-width: $screen-lg) {
+    padding: 40px 0 17px 0;
+    .btn {
+      display: flex;
+      gap: 8px;
+      justify-content: space-between;
+      align-items: center;
+      font-family: $font-medium;
+      width: fit-content;
+    }
+    .btn:nth-child(3) {
+      padding-right: 30px;
+    }
+    text-wrap: nowrap;
+  }
+  @media (min-width: $screen-lg) {
+    display: flex;
+    gap: 32px;
+  }
+  h1 {
+    margin: 0;
+    font-family: $font-bold;
+    width: 100%;
+    @media (min-width: $screen-lg) {
+      padding-right: 120px;
+    }
+  }
+  &::before {
+    content: url(../img/highlight.svg);
+    width: 4px;
+    height: 40px;
+    position: relative;
+
+    padding-right: 16px;
+
+    @media (min-width: $screen-lg) {
+      padding-right: 0;
+    }
+  }
+}

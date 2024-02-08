@@ -1,0 +1,23 @@
+.hidden-mobile {
+  display: none !important;
+}
+
+@media (min-width: $screen-md) {
+  .hidden-mobile {
+    display: flex !important;
+  }
+  .hidden-tablet {
+    display: none !important;
+  }
+  .show-tablet {
+    display: flex !important;
+  }
+}
+@media (min-width: $screen-lg) {
+  .show-desktop {
+    display: flex !important;
+  }
+  .hidden-desktop {
+    display: none !important;
+  }
+}

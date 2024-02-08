@@ -1,0 +1,25 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  a {
+    text-decoration: none;
+    color: #1b1c21;
+  }
+
+  &__tel {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.6px;
+    font-family: $font-bold;
+    text-decoration: none;
+  }
+
+  &_lang-switch {
+    display: flex;
+    gap: 7px;
+  }
+}
